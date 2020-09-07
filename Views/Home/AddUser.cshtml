@@ -1,0 +1,29 @@
+﻿@model Assessment_5.Models.WebUser
+@{
+
+}
+<h1>Thank you for registering!</h1>
+
+<h3>Welcome, @Model.Username!</h3>
+<br />
+
+Your first name is @Model.Firstname
+<br />
+
+Your last name is @Model.Lastname
+<br />
+
+Your gender is @Model.Gender
+<br />
+
+Your birthday is @Model.Birthday
+<br />
+
+Your email is @Model.Email
+<br />
+
+Your password is @Model.Password
+<br />
+<br />
+
+<h4>Click here to place your @Html.ActionLink("Order", "Order", "Home")!</h4>

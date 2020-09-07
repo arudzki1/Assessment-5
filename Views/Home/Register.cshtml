@@ -1,0 +1,50 @@
+﻿<br />
+<h2>Please fill out the form to register</h2>
+
+
+<form method="POST" action="/Home/AddUser">
+    <table>
+        <tr>
+            <br>
+            <td><label for="firstname"> First name:</label><br></td>
+            <td><input type="text" name="firstname" placeholder="John" pattern="^[A-Z][a-z][^0-9]{1,30}$" required><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="lastname"> Last name:</label><br></td>
+            <td><input type="text" name="lastname" placeholder="Smith" pattern="^[A-Z][a-z][^0-9]{1,30}$" required><br><br></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male"> Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female"> Female</label><br>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other"> Other</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="birthday"> Birthday:</label><br></td>
+            <td><input type="date" id="birthday" name="birthday"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="email"> Email: </label><br></td>
+            <td><input type="email" name="email" placeholder="johnsmith@domain.com" required><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="phone"> Phone Number: </label><br></td>
+            <td><input type="phone" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="username"> Username:</label><br></td>
+            <td><input type="text" id="username" name="username" placeholder="jsmith"><br><br></td>
+        </tr>
+        <tr>
+            <td><label for="password"> Password:</label><br></td>
+            <td><input type="password" name="password" minlength="8" placeholder="minimum 8 characters" required><br><br></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>

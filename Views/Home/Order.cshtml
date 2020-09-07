@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2>GC Coffee Menu</h2>
+
+<form method="POST" action="/Home/Order">
+    <table>
+        <tr>
+            <td>
+                <h3>What kind of beverage would you like?</h3>
+                <input type="radio" id="blonde cafe latte" name="drink" value="blond cafe latte" required>
+                <label for="blond cafe latte"> Blond Cafe Latte</label><br>
+
+                <input type="radio" id="caramel macchiato" name="drink" value="caramel macchiato" required>
+                <label for="caramel macchiato"> Caramel Macchiato</label><br>
+
+                <input type="radio" id="skinny mocha" name="drink" value="skinny mocha" required>
+                <label for="skinny mocha"> Skinny Mocha</label>
+                <h6>Almond, Coconut, and Soy milk are available</h6><br>
+
+                <input type="radio" id="nitro cold brew" name="drink" value="nitro cold brew" required />
+                <label for="nitro cold brew"> Nitro Cold Brew</label><br>
+
+                <input type="radio" id="iced latte" name="drink" value="iced latte" required />
+                <label for="iced latte"> Iced Latte</label><br>
+
+                <input type="radio" id="frappuccino" name="drink" value="frappuccino" required />
+                <label for="frappuccino"> Frappuccino</label>
+                <h6>Let your barista know your preferred brew method</h6><br>
+
+                <input type="radio" id="cafe americano" name="drink" value="cafe americano" required />
+                <label for="cafe americano"> Cafe Americano</label><br>
+
+                <input type="radio" id="cafe latte" name="drink" value="cafe latte" required />
+                <label for="cafe latte"> Cafe Latte</label><br>
+
+                <input type="radio" id="cappuccino" name="drink" value="cappuccino" required />
+                <label for="cappuccino"> Cappuccino</label><br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>What size would you like?</h3>
+                <input type="radio" id="small" name="size" value="small" required />
+                <label for="small"> Small</label><br>
+                <input type="radio" id="medium" name="size" value="medium" required />
+                <label for="medium"> Medium</label><br>
+                <input type="radio" id="large" name="size" value="large" required />
+                <label for="large"> Large</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Is this pick up or delivery?</h3>
+                <input type="radio" id="pickup" name="collect" value="pickup" required />
+                <label for="pickup"> Pickup</label>
+                <label for="pickup time"> - Select a time:</label>
+                <input type="time" id="pickup time" name="time" /><br>
+
+                <input type="radio" id="deliver" name="collect" value="delivery" required />
+                <label for="delivery"> Delivery</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+    </table>
+</form>
